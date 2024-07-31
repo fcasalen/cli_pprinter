@@ -56,3 +56,7 @@ class CLIPPrinter:
     def white_underline(msg: str, **kwargs):
         'white, bold, reverse'
         cprint(text = CLIPPrinter.__adjust_msg__(msg), color = 'white', attrs = attrs_bru, **kwargs)
+
+    @staticmethod
+    def line_breaker(breaker:str = "*", breaker_count:int = 100):
+        cprint(text=breaker * breaker_count + '\n', color = 'white', attrs = attrs_bru)
