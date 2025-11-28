@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "cli_pprinter"
+packages = [{include = "src"}]
+version = "0.2.0"
+description = "print in cli with colors (wrapper of termcolor)"
+license = "LICENSE"
+readme = "README.md"
+keywords = ["cli", "pprinter", "print", "colors", "termcolor"]
+authors = [
+    "Fernando Casale Neto <fcasalen@gmail.com>"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13"
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+termcolor = "^3.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^9.0.1"
+detect = "^2020.12.3"
+pytest-cov = "^7.0.0"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["src"]

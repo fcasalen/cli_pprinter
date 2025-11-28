@@ -1,1 +1,0 @@
-from .colors_terminal import CLIPPrinter
