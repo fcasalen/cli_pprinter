@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "cli_pprinter"
-packages = [{include = "src"}]
+packages = [{include = "cli_pprinter", from = "src"}]
 version = "0.2.0"
 description = "print in cli with colors (wrapper of termcolor)"
 license = "LICENSE"
