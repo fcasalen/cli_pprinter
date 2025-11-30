@@ -1,4 +1,8 @@
-[tool.poetry]
+[build-system]
+requires = ["poetry-core>=2.0.0", "poetry-dyanmic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[project]
 name = "cli_pprinter"
 packages = [{include = "cli_pprinter", from = "src"}]
 version = "0.2.0"
@@ -7,7 +11,7 @@ license = "LICENSE"
 readme = "README.md"
 keywords = ["cli", "pprinter", "print", "colors", "termcolor"]
 authors = [
-    "Fernando Casale Neto <fcasalen@gmail.com>"
+    { author = "Fernando Casale Neto", email = "fcasalen@gmail.com" }
 ]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -15,6 +19,12 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13"
 ]
+requires-python = ">=3.11"
+dynamic = ["version", "dependencies"]
+
+[tool-poetry]
+version = "0.0.0"
+packages = [{include = "cli_pprinter", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -24,6 +34,11 @@ termcolor = "^3.2.0"
 pytest = "^9.0.1"
 detect = "^2020.12.3"
 pytest-cov = "^7.0.0"
+
+[tool.poetry.dynamic-versioning]
+enable = true
+vcs = "git"
+system = "pep440"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
