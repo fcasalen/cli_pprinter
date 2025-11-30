@@ -22,8 +22,8 @@ requires-python = ">=3.11"
 dynamic = ["version", "dependencies"]
 
 [tool.poetry]
-version = "0.0.0"
 packages = [{include = "cli_pprinter", from = "src"}]
+version = "0.0.0"
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -34,7 +34,7 @@ pytest = "^9.0.1"
 detect = "^2020.12.3"
 pytest-cov = "^7.0.0"
 
-[tool.poetry.dynamic-versioning]
+[tool.poetry-dynamic-versioning]
 enable = true
 vcs = "git"
 system = "pep440"
