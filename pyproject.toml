@@ -36,7 +36,7 @@ pytest-cov = "^7.0.0"
 [tool.poetry-dynamic-versioning]
 enable = true
 vcs = "git"
-format = "pep440"
+format = "{base}"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
