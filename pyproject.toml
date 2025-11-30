@@ -18,7 +18,7 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13"
 ]
-requires-python = ">=3.11"
+requires-python = ">=3.11, <4.0"
 dynamic = ["version", "dependencies"]
 
 [tool.poetry]
@@ -26,7 +26,6 @@ packages = [{include = "cli_pprinter", from = "src"}]
 version = "0.0.0"
 
 [tool.poetry.dependencies]
-python = "^3.11"
 termcolor = "^3.2.0"
 
 [tool.poetry.group.dev.dependencies]
