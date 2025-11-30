@@ -1,17 +1,16 @@
 [build-system]
-requires = ["poetry-core>=2.0.0", "poetry-dyanmic-versioning>=1.0.0,<2.0.0"]
+requires = ["poetry-core>=2.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
 build-backend = "poetry_dynamic_versioning.backend"
 
 [project]
 name = "cli_pprinter"
 packages = [{include = "cli_pprinter", from = "src"}]
-version = "0.2.0"
 description = "print in cli with colors (wrapper of termcolor)"
 license = "LICENSE"
 readme = "README.md"
 keywords = ["cli", "pprinter", "print", "colors", "termcolor"]
 authors = [
-    { author = "Fernando Casale Neto", email = "fcasalen@gmail.com" }
+    { name = "Fernando Casale Neto", email = "fcasalen@gmail.com" }
 ]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -22,7 +21,7 @@ classifiers = [
 requires-python = ">=3.11"
 dynamic = ["version", "dependencies"]
 
-[tool-poetry]
+[tool.poetry]
 version = "0.0.0"
 packages = [{include = "cli_pprinter", from = "src"}]
 
