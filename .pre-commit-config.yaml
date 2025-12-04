@@ -15,9 +15,9 @@ repos:
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.14.2
     hooks:
+      - id: ruff-format
       - id: ruff
         args: [--fix, --exit-non-zero-on-fix]
-      - id: ruff-format
 
   # 🔹 Codespell → spell checking (fast)
   - repo: https://github.com/codespell-project/codespell

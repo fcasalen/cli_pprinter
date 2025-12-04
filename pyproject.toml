@@ -43,3 +43,9 @@ testpaths = ["tests"]
 
 [tool.coverage.run]
 source = ["src"]
+
+[tool.ruff.lint]
+select = ["I", "F", "E", "W", "C", "N"]
+
+[tool.ruff.format]
+docstring-code-format = true
