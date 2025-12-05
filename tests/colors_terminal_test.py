@@ -1,6 +1,7 @@
-from src.cli_pprinter.colors_terminal import CLIPPrinter
 import io
 import sys
+
+from src.cli_pprinter.colors_terminal import CLIPPrinter
 
 
 def test_all():
