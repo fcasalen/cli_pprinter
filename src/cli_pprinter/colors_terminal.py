@@ -5,6 +5,7 @@ attrs_bru = ["bold", "reverse", "underline"]
 
 
 class CLIPPrinter:
+    @staticmethod
     def __adjust_msg__(msg: str):
         return msg + "\n"
 
